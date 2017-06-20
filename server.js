@@ -20,7 +20,6 @@ var EventSource = require('eventsource');
 var JsonPatch   = require('fast-json-patch');
 // add http dependency
 var Http        = require('http');
-var QueryString = require('querystring');
 
 function server() {
   // define variables
@@ -89,8 +88,12 @@ function server() {
   function forwardData() {
       const reqData = JSON.stringify(data);
       const options = {
+        // Define here the hostname you want to forward the updated data to  
         hostname: '192.168.2.177',
+        // Add the port
         port: 1234,
+        // Add the path
+        path: '/',
         method: 'POST',
         headers: {
             'Content-Type': 'application/json' 

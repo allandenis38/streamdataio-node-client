@@ -1,4 +1,5 @@
 # Simple node.js app using streamdata.io
+This application will start a Streamdata client to get data and updates from the specified URL. On reception of data, this application will forward it with an HTTP POST request to the specified endpoint.
 
 ## Step by step setup
 
