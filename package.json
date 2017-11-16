@@ -7,10 +7,11 @@
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Allan Denis",
   "license": "Apache 2 License",
   "dependencies": {
     "eventsource": "^0.1.6",
-    "fast-json-patch": "^0.5.4"
+    "fast-json-patch": "^2.0.6",
+    "request": "^2.83.0"
   }
 }
